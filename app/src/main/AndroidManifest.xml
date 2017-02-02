@@ -2,19 +2,49 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codingblocks.hackcsi">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.ChatbotFiles.ChatActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.Initial.SplashScreen"></activity>
+
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.GamePart.QuestionActivity" />
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.GamePart.AnswerActivity" />
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.GamePart.GameInitActivity" />
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.Initial.MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1022118894554665"
+            android:exported="true" />
+
+        <activity android:name=".MainActivity1">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+    </application>
 </manifest>

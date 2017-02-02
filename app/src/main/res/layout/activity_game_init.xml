@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_init"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#3066BE"
+    tools:context="com.codingblocks.customnavigationdrawer.com.codingblocks.ChatBot.GamePart.GameInitActivity">
+    <TextView
+        android:id="@+id/textGameinit"
+
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="Let's Play Game for a change !!"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:id="@+id/btn_Yes"
+        android:layout_below="@id/textGameinit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#033860"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="35dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:onClick="play_yes"
+        android:text="YES"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="60dp"/>
+    <Button
+        android:id="@+id/btn_No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGameinit"
+        android:background="#033860"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:onClick="play_no"
+        android:text="No"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/btn_Yes"/>
+
+</RelativeLayout>
