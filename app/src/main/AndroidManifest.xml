@@ -13,7 +13,7 @@
 
         </application>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".SheltersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

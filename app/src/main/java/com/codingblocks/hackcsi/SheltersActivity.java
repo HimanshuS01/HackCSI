@@ -1,22 +1,12 @@
 package com.codingblocks.hackcsi;
 
-import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringDef;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
-import com.baoyz.swipemenulistview.SwipeMenu;
-import com.baoyz.swipemenulistview.SwipeMenuCreator;
-import com.baoyz.swipemenulistview.SwipeMenuItem;
 import com.codingblocks.hackcsi.UI.CustomListAdapter;
 
 import org.json.JSONArray;
@@ -32,7 +22,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class MainActivity extends AppCompatActivity{
+public class SheltersActivity extends AppCompatActivity{
 
 
 
@@ -42,13 +32,14 @@ public class MainActivity extends AppCompatActivity{
     public static boolean mShelterFlag = false;
     public static boolean mPetFlag = false;
     public static ShelterParcel shelterParcel;
+    String st;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Log.e("sa","sa");
+        setContentView(R.layout.shelter_activity);
         getShelterData("20001");
+
+
     }
 
 
@@ -85,13 +76,11 @@ public class MainActivity extends AppCompatActivity{
                     final ArrayList<String> city =new ArrayList<String>();
                     final ArrayList<String> email=new ArrayList<String>();
                     final ArrayList<String> name=new ArrayList<String>();
-                    final ArrayList<String> phone = new ArrayList<String>();
                     for(ShelterParcel shelterParcel:shelterParcels)
                     {
 
                         city.add(shelterParcel.getCity());
                         name.add(shelterParcel.getName());
-                        phone.add(shelterParcel.getName());
                         email.add(shelterParcel.getEmail());
                     }
 
@@ -100,10 +89,8 @@ public class MainActivity extends AppCompatActivity{
                         public void run() {
 
 
-                            for(String ph:phone)
-                            Log.e("bh",ph);
-                            ArrayList<String> arr=new ArrayList<String>();
-                            CustomListAdapter adapter = new CustomListAdapter(MainActivity.this,name,phone,city,email);
+
+                            CustomListAdapter adapter = new CustomListAdapter(SheltersActivity.this,name,city,email);
 
                             ListView listView= (ListView) findViewById(R.id.listview);
                             listView.setAdapter(adapter);
