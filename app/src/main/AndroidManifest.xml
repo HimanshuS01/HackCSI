@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.codingblocks.hackcsi.ChatBot.ChatbotFiles.ChatActivity">
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.ChatbotFiles.ChatActivity"></activity>
+
+        <application android:name="com.codingblocks.hackcsi.MyApplication">
+
+        </application>
+
+        <activity android:name=".SheltersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
