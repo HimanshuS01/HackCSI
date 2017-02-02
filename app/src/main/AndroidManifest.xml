@@ -25,7 +25,7 @@
         <activity android:name="com.codingblocks.hackcsi.ChatBot.GamePart.QuestionActivity" />
         <activity android:name="com.codingblocks.hackcsi.ChatBot.GamePart.AnswerActivity" />
         <activity android:name="com.codingblocks.hackcsi.ChatBot.GamePart.GameInitActivity" />
-        <activity android:name="com.codingblocks.hackcsi.ChatBot.Initial.MainActivity">
+        <activity android:name="com.codingblocks.hackcsi.ChatBot.Initial.MainActivity2">
 
         </activity>
 

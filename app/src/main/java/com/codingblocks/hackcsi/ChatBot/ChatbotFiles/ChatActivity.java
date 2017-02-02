@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.ChatbotFiles;
+package com.codingblocks.hackcsi.ChatBot.ChatbotFiles;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -18,9 +18,9 @@ import android.widget.ListView;
 
 import android.widget.Toast;
 
-import com.codingblocks.ChatBot.Networking.ApiClientChatbot;
-import com.codingblocks.ChatBot.GamePart.GameInitActivity;
-import com.codingblocks.customnavigationdrawer.R;
+import com.codingblocks.hackcsi.ChatBot.Networking.ApiClientChatbot;
+import com.codingblocks.hackcsi.ChatBot.GamePart.GameInitActivity;
+import com.codingblocks.hackcsi.R;
 import com.roger.catloadinglibrary.CatLoadingView;
 import java.text.DateFormat;
 import java.util.ArrayList;

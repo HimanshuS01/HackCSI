@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.Initial;
+package com.codingblocks.hackcsi.ChatBot.Initial;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,8 +10,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.codingblocks.ChatBot.ChatbotFiles.ChatActivity;
-import com.codingblocks.customnavigationdrawer.R;
+import com.codingblocks.hackcsi.ChatBot.ChatbotFiles.ChatActivity;
+import com.codingblocks.hackcsi.R;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -34,7 +34,7 @@ public class SplashScreen extends AppCompatActivity {
         else {
             SharedPreferences.Editor ed = sp.edit();
             ed.putBoolean("firstrun", true).apply();
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, MainActivity2.class);
             overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             startActivity(intent);
             finish();

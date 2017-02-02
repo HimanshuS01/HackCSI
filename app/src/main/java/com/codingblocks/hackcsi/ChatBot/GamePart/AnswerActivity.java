@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.GamePart;
+package com.codingblocks.hackcsi.ChatBot.GamePart;
 
 
 import android.app.Activity;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.codingblocks.customnavigationdrawer.R;
+import com.codingblocks.hackcsi.R;
 
 
 public class AnswerActivity extends Activity {

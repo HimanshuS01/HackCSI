@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.Networking;
+package com.codingblocks.hackcsi.ChatBot.Networking;
 
 
 import com.google.gson.Gson;

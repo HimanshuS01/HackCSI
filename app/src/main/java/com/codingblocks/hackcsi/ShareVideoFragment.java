@@ -2,14 +2,12 @@ package com.codingblocks.hackcsi;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -78,6 +76,7 @@ public class ShareVideoFragment extends Fragment {
 
         if (requestCode == 1) {
             Uri videoFileUri = data.getData();
+            Log.e("URIpath",videoFileUri+"");
             ShareVideo video = new ShareVideo.Builder()
                     .setLocalUrl(videoFileUri)
                     .build();
@@ -96,19 +95,19 @@ public class ShareVideoFragment extends Fragment {
     private FacebookCallback<Sharer.Result> callback = new FacebookCallback<Sharer.Result>() {
         @Override
         public void onSuccess(Sharer.Result result) {
-            Log.e(TAG, "Succesfully posted");
+            Log.e("Himanshu", "Succesfully posted");
             // Write some code to do some operations when you shared content successfully.
         }
 
         @Override
         public void onCancel() {
-            Log.e(TAG, "Cancel occured");
+            Log.e("Himanshu", "Cancel occured");
             // Write some code to do some operations when you cancel sharing content.
         }
 
         @Override
         public void onError(FacebookException error) {
-            Log.e(TAG, error.getMessage());
+            Log.e("Himanshu", error.getMessage());
             // Write some code to do some operations when some error occurs while sharing content.
         }
     };

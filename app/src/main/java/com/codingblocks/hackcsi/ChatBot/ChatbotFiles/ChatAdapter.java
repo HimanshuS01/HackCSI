@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.ChatbotFiles;
+package com.codingblocks.hackcsi.ChatBot.ChatbotFiles;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.codingblocks.customnavigationdrawer.R;
+import com.codingblocks.hackcsi.R;
 
 import java.util.List;
 

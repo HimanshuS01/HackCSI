@@ -1,6 +1,6 @@
-package com.codingblocks.ChatBot.Networking;
+package com.codingblocks.hackcsi.ChatBot.Networking;
 
-import com.codingblocks.ChatBot.ChatbotFiles.Question;
+import com.codingblocks.hackcsi.ChatBot.ChatbotFiles.Question;
 
 
 import retrofit2.Call;

@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.GamePart;
+package com.codingblocks.hackcsi.ChatBot.GamePart;
 
 /**
  * Created by Sachin on 11/13/2016.

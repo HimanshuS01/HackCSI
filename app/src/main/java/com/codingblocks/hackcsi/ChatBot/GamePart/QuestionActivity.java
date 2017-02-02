@@ -1,4 +1,4 @@
-package com.codingblocks.ChatBot.GamePart;
+package com.codingblocks.hackcsi.ChatBot.GamePart;
 
 import java.util.Collections;
 import java.util.List;
@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.codingblocks.customnavigationdrawer.R;
+import com.codingblocks.hackcsi.R;
 
 
 public class QuestionActivity extends Activity {
