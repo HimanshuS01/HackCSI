@@ -63,6 +63,8 @@ public class FetchData extends AppCompatActivity{
                     Log.v(TAG, jsonData);
                     Log.e("sachin",jsonData);
                     shelterParcel= fetchShelters(jsonData);
+                    ShelterParcel[] shelterParcels=ShelterParcel.getShelters();
+                    Log.e("bhav",""+shelterParcels);
                     mShelterFlag = true;
                 } catch (IOException | JSONException e) {
                     Log.e(TAG, "Exception caught: ", e);
